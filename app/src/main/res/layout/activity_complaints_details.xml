@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+                   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Complaints"
+                android:id="@+id/complaints_detail_toolbar"
+                app:titleTextAppearance="@style/collappsed_subtitle_text_appearence"></androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:text="Phone is not working"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:id="@+id/complainttitle"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textSize="22sp"
+                    android:textAppearance="@style/expanded_title_text_appearence"
+                    android:textColorHint="@color/grey"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:text="From : Harpreet Singh"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/color2"
+                android:id="@+id/sendername"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="15sp"
+                android:textAppearance="@style/collappsed_subtitle_text_appearence"
+                ></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/grey"
+                android:id="@+id/date"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="14sp"
+                android:textAppearance="@style/expanded_title_text_appearence"
+                ></TextView>
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etmsg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_background"
+                android:textColorHint="@color/grey"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                android:hint="My governmnt phone is not working , please kindly repaire it now."
+                android:layout_marginBottom="20dp"
+                android:inputType="textMultiLine"
+                android:maxLength="500"
+                android:gravity="top|left"
+                android:lines="20"
+                android:textSize="14dp"
+                android:minLines="12"
+                />
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/attachment_container"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attachment"
+                    android:textColor="@color/color2"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                </TextView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/attachment_rv"></androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <include layout="@layout/progressbar"></include>
+</RelativeLayout>

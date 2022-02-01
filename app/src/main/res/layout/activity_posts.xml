@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Posts"
+    android:background="@color/black"
+    android:orientation="vertical"
+   >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Posts"
+        android:id="@+id/toolbarposts"
+        app:titleTextAppearance="@style/collappsed_subtitle_text_appearence"
+        app:titleTextColor="@color/color2"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+    <include layout="@layout/updates_item"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Title"
+                    android:textColor="@color/white"
+                    android:id="@+id/posttitle"
+                    android:textSize="14sp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/grey"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Description"
+                android:textColor="@color/white"
+                android:id="@+id/postdescription"
+                android:textSize="14sp"
+                android:backgroundTint="@android:color/transparent"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/grey"></EditText>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="10dp"
+                android:visibility="gone"
+                android:id="@+id/progress_status"
+                android:textAppearance="@style/collappsed_subtitle_text_appearence"
+                android:textColor="@color/color2"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/selected_images"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Browse Picture"
+            android:textAllCaps="false"
+            android:id="@+id/chooser"
+            android:textSize="14sp"
+            android:textColor="@color/white"></Button>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="Upload"
+            android:id="@+id/upload"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <include layout="@layout/progressbar"></include>
+    </RelativeLayout>
+
+</LinearLayout>

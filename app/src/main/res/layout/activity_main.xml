@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+
+    <!--main layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/window"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black">
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                >
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    android:background="@color/black"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <com.google.android.material.appbar.SubtitleCollapsingToolbarLayout
+                        android:id="@+id/collapsing_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="270dp"
+                        android:background="@color/black"
+                        android:elevation="20dp"
+                        app:collapsedTitleTextAppearance="@style/collappsed_subtitle_text_appearence"
+                        app:contentScrim="?attr/colorPrimary"
+                        app:expandedTitleTextAppearance="@style/expanded_subtitle_text_appearence"
+                        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                        app:title="Updates">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="270dp"
+                                android:src="@mipmap/imgone"
+                                android:scaleType="centerCrop"></ImageView>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:src="@drawable/shed_mirror"
+                                android:scaleType="centerCrop"></ImageView>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="270dp"
+                                android:src="@drawable/text_mirror"
+                                android:scaleType="centerCrop"></ImageView>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15dp"
+                                    android:layout_marginTop="50dp">
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:scaleType="centerInside"
+                                        android:src="@drawable/dslogo"
+                                        ></ImageView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/open_sans"
+                                        android:text="Digital \nSahungra"
+                                        android:textColor="@color/white"
+                                        android:textSize="13sp"
+                                        android:gravity="top"
+                                        android:textStyle="bold"></TextView>
+                                    <View
+                                        android:layout_width="1dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/white"
+                                        android:layout_marginLeft="7dp"
+                                        ></View>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:text="Dream \nWork \nAct"
+                                        android:textColor="@color/color2"
+                                        android:textSize="12sp"
+                                        android:gravity="top"
+                                        android:textStyle="bold"
+                                        ></TextView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_marginTop="55dp"
+                                    android:layout_marginLeft="25dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/open_sans"
+                                        android:text="Digital Sahungra Admin"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold"></TextView>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/grey"
+                                        android:textSize="12sp"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginRight="30dp"
+                                        android:text="Gram Panchayt Sahungra is the first online Gram Panchayt in Punjab. Under the surveillance of Sarpanch Rajbalwinder Singh."></TextView>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+
+
+
+                    </com.google.android.material.appbar.SubtitleCollapsingToolbarLayout>
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/blue"
+                                android:gravity="center"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/open_sans"
+                                android:text="Admin's Menu"></TextView>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="5"
+                      android:orientation="vertical"
+                      android:gravity="center"
+                      android:id="@+id/official_cabin"
+                      android:layout_margin="10dp"
+                     >
+                      <ImageView
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:tint="@color/blue"
+                          android:src="@drawable/ic_computer_black_24dp"></ImageView>
+
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:textSize="13dp"
+                          android:textColor="@color/grey"
+                          android:layout_margin="5dp"
+                          android:text="Official Cabin"></TextView>
+                  </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:id="@+id/panchayat_members"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:tint="@color/blue"
+                                android:src="@drawable/ic_person_black_24dp"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13dp"
+                                android:textColor="@color/grey"
+                                android:layout_margin="5dp"
+                                android:text="Panchayat Members"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="10"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:id="@+id/stars_of_sahungra"
+                            android:layout_margin="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:tint="@color/blue"
+                                android:src="@drawable/ic_stars_black_24dp"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13dp"
+                                android:textColor="@color/grey"
+                                android:layout_margin="5dp"
+                                android:text="Stars Of Sahungra"></TextView>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="5"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:id="@+id/village_asserts"
+                            android:layout_margin="10dp"
+                            >
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:tint="@color/blue"
+                                android:src="@drawable/ic_dashboard_black_24dp"></ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13dp"
+                                android:textColor="@color/grey"
+                                android:layout_margin="5dp"
+                                android:text="Village Assets"></TextView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:id="@+id/post_manager"
+                                android:layout_margin="10dp"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:tint="@color/blue"
+                                    android:src="@drawable/ic_notifications_active_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/grey"
+                                    android:layout_margin="5dp"
+                                    android:text="Post Manager"></TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:id="@+id/complaints"
+                                android:layout_margin="10dp"
+                                >
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:tint="@color/blue"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_error_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/grey"
+                                    android:layout_margin="5dp"
+                                    android:text="Complaints"></TextView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="10"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:id="@+id/recents"
+                                android:layout_margin="10dp"
+                                >
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:tint="@color/blue"
+                                    android:src="@drawable/ic_call_received_black_24dp"></ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13dp"
+                                    android:textColor="@color/grey"
+                                    android:layout_margin="5dp"
+                                    android:text="Recent batch"></TextView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="5"
+                                android:orientation="vertical"
+
+                                android:gravity="center"
+                                android:layout_margin="10dp"
+                                >
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingBottom="30dp"
+                            android:background="@color/black"
+                            android:gravity="center_horizontal">
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/edit_text_background">
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:textSize="14sp"
+                                    android:hint="Version code"
+                                    android:paddingLeft="10dp"
+                                    android:id="@+id/version_code"
+                                    android:singleLine="false"
+                                    android:text=""
+                                    android:inputType="text"
+                                    android:textColorHint="@color/grey"
+                                    android:gravity="left|center_vertical"
+                                    android:background="@drawable/edit_text_background"
+                                    android:backgroundTint="@android:color/transparent"
+                                    android:textColor="@color/white"
+                                    ></EditText>
+
+                            </LinearLayout>
+
+
+
+
+
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:gravity="center"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:background="@drawable/button"
+                                android:text="Update"
+                                android:id="@+id/update"
+                                android:textSize="10sp"
+                                android:layout_marginLeft="20dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_marginTop="10dp"
+                                android:textColor="@color/white"
+                                android:textAllCaps="false"
+                                ></Button>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+
+
+
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <include layout="@layout/progressbar"></include>
+</RelativeLayout>

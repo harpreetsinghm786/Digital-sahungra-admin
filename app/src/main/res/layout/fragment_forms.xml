@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".forms"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edit_text_background">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/grey"
+                    android:hint="Search Here"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/formsearch"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/grey"></EditText>
+            </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/forms_rv"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:id="@+id/formeditor"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_background">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Form Name"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/fromname"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textSize="14sp"
+
+                    android:textColorHint="@color/grey"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edit_text_background">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="top"
+                    android:hint="Enter Form Description"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/formdescription"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/grey"></EditText>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_margin="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Browse Form"
+                android:textAllCaps="false"
+                android:id="@+id/browse"
+                android:textSize="14sp"
+                android:textColor="@color/white"></Button>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Done"
+                android:textAllCaps="false"
+                android:id="@+id/fromdone"
+                android:textSize="14sp"
+                android:textColor="@color/white"></Button>
+        </LinearLayout>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/blue"
+            app:borderWidth="-1dp"
+            android:id="@+id/addform"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:tint="@color/white"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <include layout="@layout/progressbar"></include>
+    </RelativeLayout>
+
+</LinearLayout>

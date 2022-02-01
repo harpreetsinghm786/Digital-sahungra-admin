@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "494970191330",
+    "firebase_url": "https://digital-sahungra-1561350650328.firebaseio.com",
+    "project_id": "digital-sahungra-1561350650328",
+    "storage_bucket": "digital-sahungra-1561350650328.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494970191330:android:03a4e8b58332f1f254cdbb",
+        "android_client_info": {
+          "package_name": "com.official.dsa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494970191330-7uh28q8rp4icj6d6biunb88gpi718s11.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.dsa",
+            "certificate_hash": "36165e422a7d63368c12bf6d80d0f1fa5a45fd43"
+          }
+        },
+        {
+          "client_id": "494970191330-d6fc2o2aepqnkrd4lqjrgl5bh8ul18jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6xPbo9ljQn8yV7qZMThWh1Db8sU-ElH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494970191330-d6fc2o2aepqnkrd4lqjrgl5bh8ul18jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494970191330:android:06f5a1972d73327354cdbb",
+        "android_client_info": {
+          "package_name": "com.sahungra.digitalsahungra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494970191330-63br6c0a4qidjvt0kcpj4q8o8im4h105.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahungra.digitalsahungra",
+            "certificate_hash": "db64113bcd39ed119b67df2e12873ae8c54366dc"
+          }
+        },
+        {
+          "client_id": "494970191330-oc3hcjnf0bq0q7rr89270b4ibak6qv22.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahungra.digitalsahungra",
+            "certificate_hash": "96eae79b735d520603478f28abcbcecd81f74768"
+          }
+        },
+        {
+          "client_id": "494970191330-s2s4v882365icu748127r8it2l3murlh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sahungra.digitalsahungra",
+            "certificate_hash": "b7f3e7aa633e5e80736f9f7b0c7ce1f066edadad"
+          }
+        },
+        {
+          "client_id": "494970191330-d6fc2o2aepqnkrd4lqjrgl5bh8ul18jv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6xPbo9ljQn8yV7qZMThWh1Db8sU-ElH0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494970191330-d6fc2o2aepqnkrd4lqjrgl5bh8ul18jv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

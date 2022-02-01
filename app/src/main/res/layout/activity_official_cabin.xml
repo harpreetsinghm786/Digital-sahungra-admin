@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/official_cabin_toolbar"
+            android:background="@color/black"
+            app:title="Official Cabin"
+            app:titleTextAppearance="@style/collappsed_subtitle_text_appearence"
+            app:titleTextColor="@color/blue"></androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/black_overlay"
+            android:id="@+id/tabLayout"
+            app:tabIndicatorColor="@color/color2"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicator="@drawable/tab_indicator"
+            app:tabMode="scrollable"
+            android:elevation="10sp"
+            app:tabPaddingStart="10dp"
+            app:tabPaddingEnd="10dp"
+            app:tabTextAppearance="@style/TabLayoutStyle"
+            app:tabTextColor="@color/blue"
+            app:tabSelectedTextColor="@color/color2"
+            app:tabGravity="center">
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tab_bar_view_pager"
+        android:background="@color/black"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"></androidx.viewpager.widget.ViewPager>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

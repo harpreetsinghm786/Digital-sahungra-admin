@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="color1">#5693F5</color>
+    <color name="blackover">#5C5959</color>
+    <color name="color2">#368eff</color>
+    <color name="grey">#C9C7C7</color>
+    <color name="black_overlay">#262727</color>
+    <color name="white">#fff</color>
+    <color name="black">#090909</color>
+    <color name="blue">#368eff</color>
+    <color name="glass">#AE000000</color>
+</resources>
